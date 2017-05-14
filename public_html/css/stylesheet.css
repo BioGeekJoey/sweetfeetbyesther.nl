@@ -38,7 +38,7 @@
   .col-12 {width: 100%;}
 } */
 
-body {
+html {
   background-image: url('img/backgroundvector.svg');
   background-attachment: fixed;
   background-repeat: no-repeat;
