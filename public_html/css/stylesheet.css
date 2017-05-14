@@ -44,11 +44,11 @@ body {
   background-image: url('img/backgroundvector.svg');
   background-attachment: fixed;
   background-repeat: no-repeat;
-  -webkit-background-size: 80vmin auto;
-  -moz-background-size: 80vmin auto;
-  -o-background-size: 80vmin auto;
-  background-size: 80vmin auto;
-  background-position: 95% 95%; 
+  -webkit-background-size: 80% auto;
+  -moz-background-size: 80% auto;
+  -o-background-size: 80% auto;
+  background-size: 80% auto;
+  background-position: right bottom%; 
 }
 
 h1, h3, p {
