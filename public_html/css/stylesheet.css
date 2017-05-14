@@ -38,6 +38,11 @@
   .col-12 {width: 100%;}
 } */
 
+body, html {
+  min-height: 100vh;
+  margin: 0;
+}
+
 body {
   overflow-x: hidden;
   overflow-y: auto;
