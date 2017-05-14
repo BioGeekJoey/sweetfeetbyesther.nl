@@ -56,9 +56,9 @@ h1, h3, p {
 h1, h3 {
   font-weight: bold;
   color: #ee799f;
-  -webkit-text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000;
-  -moz-text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000;
-  text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000;
+  -webkit-text-shadow: -1px 0 1px #8b3a62, 1px 0 1px #8b3a62, 0 -1px 1px #8b3a62, 0 1px 1px #8b3a62;
+  -moz-text-shadow: -1px 0 1px #8b3a62, 1px 0 1px #8b3a62, 0 -1px 1px #8b3a62, 0 1px 1px #8b3a62;
+  text-shadow: -1px 0 1px #8b3a62, 1px 0 1px #8b3a62, 0 -1px 1px #8b3a62, 0 1px 1px #8b3a62;
 
 }
 
