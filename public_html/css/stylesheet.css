@@ -77,10 +77,11 @@ body {
 }
 
 h1, h3, p {
-  font-family: Verdana;
+  font-family: 'Merriweather', serif;
 }
   
 h1 {
+  font-family: 'Merriweather', serif;
   font-size: 40px;
   font-weight: bold;
   text-align: center;
