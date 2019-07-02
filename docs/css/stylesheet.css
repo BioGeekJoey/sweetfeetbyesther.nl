@@ -56,16 +56,48 @@ body {
   background-position: right bottom; 
 }
 
-h1, h3, p {
+h1, h3 {
   font-family: 'Merriweather', serif;
 }
+
+h2, h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
   
-h1, h3 {
+h1, h2, h3, h4 {
   font-weight: bold;
+}
+
+h1, h3 {
   color: #ee799f;
   -webkit-text-shadow: -1px 0 1px #8b3a62, 1px 0 1px #8b3a62, 0 -1px 1px #8b3a62, 0 1px 1px #8b3a62;
   -moz-text-shadow: -1px 0 1px #8b3a62, 1px 0 1px #8b3a62, 0 -1px 1px #8b3a62, 0 1px 1px #8b3a62;
   text-shadow: -1px 0 1px #8b3a62, 1px 0 1px #8b3a62, 0 -1px 1px #8b3a62, 0 1px 1px #8b3a62;
+}
+
+/* [id*=brand] {
+  text-align: inherit;
+} */
+
+#brand-box {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#brand-primairy {
+  font-size: 5em;
+}
+
+#brand-sub {
+  margin-top: -1.2em;
+  font-size: 1.5em;
+  text-align: end !important;
 
 }
 
