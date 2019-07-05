@@ -1,91 +1,29 @@
-
-body, html {
-  min-height: 100vh;
-  margin: 0;
-}
-
+/* *, *:before, *:after { ... } */
+/* html { ... } */
 body {
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-image: url('img/backgroundvector.svg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  -webkit-background-size: 70vmin auto;
-  -moz-background-size: 70vmin auto;
-  -o-background-size: 70vmin auto;
-  background-size: 70vmin auto;
-  background-position: bottom right; 
+  font-family: 'Open Sans', 'Merriweather', sans-serif;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-h1, h2, h3, h4 {
-  font-weight: bold;
-
-}
-h1, h3 {
+.font1 {
   font-family: 'Merriweather', serif;
-  color: #ee799f;
+}
+
+.font2 {
+  font-family: 'The Girl Next Door', cursive;
+}
+
+.brand {
+  font-size: inherit;
+  width: fit-content;
+}
+
+.bg {
+  background: url('img/backgroundvector.svg') no-repeat center fixed;
+  background-size: 50vmin;
+}
+
+.h_shadow {
   text-shadow: -1px 0 1px #8b3a62, 1px 0 1px #8b3a62, 0 -1px 1px #8b3a62, 0 1px 1px #8b3a62;
   -webkit-text-shadow: -1px 0 1px #8b3a62, 1px 0 1px #8b3a62, 0 -1px 1px #8b3a62, 0 1px 1px #8b3a62;
   -moz-text-shadow: -1px 0 1px #8b3a62, 1px 0 1px #8b3a62, 0 -1px 1px #8b3a62, 0 1px 1px #8b3a62;
 }
-
-h2, h4 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-p {
-  font-family: 'Open Sans', sans-serif;
-}
-
-#brand-box {
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-#brand-primairy {
-  font-size: 15vw;
-}
-
-@media screen and (min-width: 768px) {
-  #brand-primairy {
-    font-size: 11vw;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  #brand-primairy {
-    font-size: 11vmin;
-  }
-}
-
-#brand-sub {
-  margin-top: -1em;
-  font-size: 3vw;
-  text-align: end !important;
-
-}
-
-.outerbox {
-  background-color: transparent;
-  height: 100%;
-  padding: 4px;
-}
-
-.innerbox {
-  background-color: rgba(255,105,180,0.25);
-  height: 100%;
-  border-radius: 8px;
-  padding-left: 10px;
-}
-
-/* .row::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
