@@ -12,17 +12,29 @@ body {
   font-family: 'The Girl Next Door', cursive;
 }
 
+.brand-container {
+  width: fit-content;
+  font-size: inherit;
+}
+
 .brand {
   font-size: inherit;
-  width: fit-content;
+}
+
+.brand-small {
+  font-size: 1em;
 }
 
 .bg {
-  background: url('img/backgroundvector.svg') no-repeat center fixed;
+  background: url('img/backgroundvector.svg') no-repeat bottom right fixed;
   background-size: 50vmin;
 }
 
-.h_shadow {
+div.bg-row {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.h-shadow {
   text-shadow: -1px 0 1px #8b3a62, 1px 0 1px #8b3a62, 0 -1px 1px #8b3a62, 0 1px 1px #8b3a62;
   -webkit-text-shadow: -1px 0 1px #8b3a62, 1px 0 1px #8b3a62, 0 -1px 1px #8b3a62, 0 1px 1px #8b3a62;
   -moz-text-shadow: -1px 0 1px #8b3a62, 1px 0 1px #8b3a62, 0 -1px 1px #8b3a62, 0 1px 1px #8b3a62;
