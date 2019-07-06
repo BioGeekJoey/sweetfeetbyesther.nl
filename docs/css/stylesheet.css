@@ -1,7 +1,22 @@
-/* *, *:before, *:after { ... } */
-/* html { ... } */
+
+html,
+body {
+  height: 100vh;
+}
+
+html {
+  overflow-y: hidden;
+}
+
 body {
   font-family: 'Open Sans', 'Merriweather', sans-serif;
+}
+
+.bg {
+  background: url('img/backgroundvector.svg') no-repeat fixed;
+  background-position: bottom 2vh right 3vw;
+  background-size: 60vmin;
+  overflow-y: hidden;
 }
 
 .font1 {
@@ -25,13 +40,14 @@ body {
   font-size: 1em;
 }
 
-.bg {
-  background: url('img/backgroundvector.svg') no-repeat bottom right fixed;
-  background-size: 50vmin;
-}
-
 div.bg-row {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.banner {
+  background: url('img/banner.png') no-repeat center fixed;
+  background-size: 960px 80px;
+  overflow: hidden;
 }
 
 .h-shadow {
