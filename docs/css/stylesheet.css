@@ -16,7 +16,7 @@ body {
   background: url('img/backgroundvector.svg') no-repeat fixed;
   background-position: bottom 2vh right 3vw;
   background-size: 60vmin;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 .font1 {
