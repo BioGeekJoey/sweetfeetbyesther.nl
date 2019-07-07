@@ -1,9 +1,4 @@
 
-html,
-body {
-  height: 100vh;
-}
-
 html {
   overflow-y: hidden;
 }
@@ -14,7 +9,7 @@ body {
 
 .bg {
   background: url('img/backgroundvector.svg') no-repeat fixed;
-  background-position: bottom 2vh right 3vw;
+  background-position: bottom 6vh right 3vw;
   background-size: 60vmin;
   overflow-y: scroll;
 }
@@ -67,12 +62,19 @@ div.banner {
 
 img.banner {
   opacity: 0.70;
-  min-height: 225px;
+  min-height: 250px;
   max-height: 300px;
+  min-width: 100%;
   filter: blur(0.8px) contrast(115%) grayscale(50%);
   -webkit-filter: blur(0.8px) contrast(115%) grayscale(50%);
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+footer div.container {
+  width: auto;
+  max-width: 1100px;
+  padding: 0 15px;
 }
 
 .h-shadow {
