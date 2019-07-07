@@ -1,81 +1,96 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl-NL">
 
 <head>
-  <title>Sweet Feet by Esther</title>
+  <title>Sweet Feet · by Esther</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Ambulant pedicure & pedicure praktijk Sweet Feet">
   <meta name="author" content="Joël van der Loo">
-
+  <link rel="canonical" href="https://sweetfeetbyesther.nl">
   <link rel="stylesheet" href="css/stylesheet.css">
-
   <!-- Bootstrap CSS -->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-
-  <!--fonts CSS References
+  <!--fonts
         font-family: 'Open Sans', sans-serif;
         font-family: 'Merriweather', serif;
         font-family: 'The Girl Next Door', cursive;-->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Open+Sans|Merriweather|The+Girl+Next+Door&display=swap">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door&text=by%20Esther&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Merriweather|The+Girl+Next+Door&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door&text=by%20Esther&display=swap">
+  <meta name="theme-color" content="#FF69B4">
+  <meta name="keywords" content="pedicure, voet, voeten, provoet, nagel, kalknagel, schimmelnagel, teennagel, ambulant, Arnhem">
 
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
-<body class="bg icon">
-  <nav class="navbar navbar-light nav-pills sticky-top navbar-expand-lg p-2">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+<body class="bg">
+
+  <header class="navbar navbar-light bg-white navbar-expand flex-column flex-md-row">
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
 
-    <a class="navbar-brand" href="#">
-      <div class="mx-auto brand-container d-flex flex-column">
+    <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Sweet Feet">
+      <div class="brand-container d-flex flex-column">
         <span class="brand brand-small font1 font-weight-bolder text-primary h-shadow">Sweet Feet</span>
         <span class="brand brand-small font2 text-dark align-self-end mt-n2">by esther</span>
       </div>
     </a>
 
-    <div class="collapse navbar-collapse" id="navbar">
+    <div class="navbar-nav-scroll" id="navbar">
       <div class="navbar-nav">
         <a class="nav-link active" href="#">Home</a>
         <a class="nav-link" href="#">Behandelingen</a>
         <a class="nav-link" href="#">Over Esther</a>
         <a class="nav-link" href="#">Maak een afspraak</a>
       </div>
-  </nav>
+	</div>
+  </header>
 
-  <div class="alert alert-primary alert-dismissible fade show mx-2" role="alert">
-    <h3 class="text.white text.center h-shadow">info</h3>De website wordt momenteel ontwikkeld. Schrijf je in voor de <a
-      href="#" class="alert-link">nieuwsbrief</a> en blijf op de hoogte van het laaste nieuws.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-
+  <main role="main">
   <div class="container">
-    <div class="row bg-row justify-content-end pt-3">
-      <div class="col-lg-9 d-none d-lg-block py-auto"><img src='css/img/banner.png' class="img-fluid rounded mx-auto d-block" alt="Banner"></div>
-      <div class="col-12 col-lg-3">
-        <div class="brand-container d-flex flex-column mx-auto py-1">
+    <div style="top: 2vh;" class="alert alert-primary alert-dismissible sticky-top fade show mx-2" role="alert">
+      <h3 class="text.white text.center h-shadow">info</h3>De website wordt momenteel ontwikkeld. Schrijf je in voor de
+      <a href="#" class="alert-link">nieuwsbrief</a> en blijf op de hoogte van het laaste nieuws.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <nav aria-label="breadcrumb" class="d-none d-md-flex">
+      <ol class="breadcrumb bg-white">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+      </ol>
+    </nav>
+
+    <div class="row bg-row py-2">
+      <div class="col d-flex py-auto">
+        <img src="css/img/banner.jpg" class="banner img-fluid d-flex rounded" alt="Banner">
+        <div class="banner d-none d-lg-flex">
+          <h1 class="font1 text-primary h-shadow text-nowrap my-2">You feet deserve some love</h1>
+        </div>
+        <div class="banner-brand d-lg-none brand-container d-flex flex-column py-1">
+          <h1 class="font1 text-primary h-shadow mb-n1">Sweet Feet</h1>
+          <h3 class="font2 text-dark align-self-end">by esther</h3>
+        </div>
+        <div class="banner-brand-lg d-none d-lg-flex brand-container flex-column py-1">
           <h1 class="font1 text-primary h-shadow mb-n1">Sweet Feet</h1>
           <h3 class="font2 align-self-end">by esther</h3>
         </div>
       </div>
     </div>
+
     <div class="row bg-row pt-3">
       <div class="col-md-8">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac tristique ante. Nulla interdum sodales velit eget iaculis. Nullam quis est et velit condimentum venenatis. Sed accumsan nulla cursus dolor vestibulum euismod. Donec nec erat urna. Aenean et lorem faucibus nibh aliquet dignissim. In varius sodales mauris, et fermentum leo elementum sollicitudin. Suspendisse sit amet velit et magna maximus molestie id a nisl. Nullam et ornare dolor. Aenean sit amet ex quis mi volutpat pellentesque.</p>
-        <p>Curabitur congue felis nunc, nec vehicula lorem posuere varius. Quisque ac rhoncus diam. Proin pretium massa nisl. Quisque fermentum pellentesque pretium. Donec ultricies enim quam, id pellentesque elit dapibus vitae. In cursus nulla vitae nunc tristique ornare. Ut a turpis ante.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac tristique ante. Nulla interdum
+          sodales velit eget iaculis. Nullam quis est et velit condimentum venenatis. Sed accumsan nulla cursus dolor
+          vestibulum euismod. Donec nec erat urna. Aenean et lorem faucibus nibh aliquet dignissim. In varius sodales
+          mauris, et fermentum leo elementum sollicitudin. Suspendisse sit amet velit et magna maximus molestie id a
+          nisl. Nullam et ornare dolor. Aenean sit amet ex quis mi volutpat pellentesque.</p>
+        <p>Curabitur congue felis nunc, nec vehicula lorem posuere varius. Quisque ac rhoncus diam. Proin pretium massa
+          nisl. Quisque fermentum pellentesque pretium. Donec ultricies enim quam, id pellentesque elit dapibus vitae.
+          In cursus nulla vitae nunc tristique ornare. Ut a turpis ante.</p>
       </div>
       <div class="col-md-4">
         <div class="card border-primary mb-3">
@@ -88,6 +103,7 @@
       </div>
     </div>
   </div>
+  </main>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
