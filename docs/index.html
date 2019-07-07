@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl-NL" class="h-100">
+<html lang="nl-NL">
 
 <head>
   <!-- basic info -->
@@ -24,10 +24,10 @@
   <meta property="og:locale" content="nl-NL" />
   <meta property="og:site_name" content="Sweet Feet by Esther" />
   <meta property="og:image" content="http://sweetfeetbyesther.nl/css/img/banner.jpg" />
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.min.css" />
   <!--fonts
         font-family: 'Open Sans', sans-serif;
         font-family: 'Merriweather', serif;
@@ -40,18 +40,18 @@
   <script src="https://kit.fontawesome.com/5026593256.js"></script>
 </head>
 
-<body class="h-100 d-flex flex-column bg">
+<body class="d-flex flex-column bg-img-primary">
   <a href="#content" class="sr-only sr-only-focusable">
     <span>sla navigatie over</span>
   </a>
-  <header class="navbar navbar-light bg-white navbar-expand flex-column flex-md-row">
+  <header class="navbar navbar-light bg-white navbar-expand flex-column flex-md-row justify-content-md-around">
     <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Sweet Feet logo">
       <div class="brand-container d-flex flex-column">
-        <span class="brand brand-small font1 font-weight-bolder text-primary h-shadow">Sweet Feet</span>
+        <span class="brand brand-small font1-shadow font-weight-bolder text-primary h-shadow">Sweet Feet</span>
         <span class="brand brand-small font2 text-dark align-self-end mt-n2">by esther</span>
       </div>
     </a>
-    <div class="navbar-nav-scroll" id="navbar">
+    <div class="navbar-nav-scroll d-flex flex-column" id="navbar">
       <div class="navbar-nav">
         <a class="nav-link active" href="#">Home</a>
         <a class="nav-link" href="#">Behandelingen</a>
@@ -63,7 +63,7 @@
   <main id="content" class="flex-shrink-0">
     <div class="container">
       <div style="top: 2vh;" class="alert alert-primary alert-dismissible sticky-top fade show mx-2" role="alert">
-        <span style="color:#FF69B4;" class="h3 text.center h-shadow d-flex">info</span>
+        <span style="color:#FF69B4;" class="h3 text.center d-flex">info</span>
         De website wordt momenteel ontwikkeld. Schrijf je in voor de
         <a href="#" class="alert-link">nieuwsbrief</a> en blijf op
         de hoogte van het laaste nieuws.
@@ -79,17 +79,17 @@
         </ol>
       </nav>
       <div class="row bg-row py-2">
-        <div class="col d-flex banner-container">
-          <img src="css/img/banner.jpg" class="banner img-fluid d-flex rounded" alt="" />
-          <div class="banner d-none d-lg-flex">
-            <span class="font1 h1 text-primary h-shadow text-nowrap my-2">You feet deserve some love</span>
+        <div class="col d-flex banner">
+          <img src="css/img/banner.jpg" class="img-fluid d-flex rounded" alt="" />
+          <div class="banner-oneliner d-none d-lg-flex">
+            <span class="font1-shadow h1 text-primary text-nowrap my-2">You feet deserve some love</span>
           </div>
           <div class="banner-brand d-lg-none brand-container d-flex flex-column py-1">
-            <span class="font1 h1 text-primary h-shadow mb-n1">Sweet Feet</span>
+            <span class="font1-shadow h1 text-primary mb-n1">Sweet Feet</span>
             <span class="font2 h3 text-dark align-self-end">by esther</span>
           </div>
           <div class="banner-brand-lg d-none d-lg-flex brand-container flex-column py-1">
-            <span class="font1 h1 text-primary h-shadow mb-n1">Sweet Feet</span>
+            <span class="font1-shadow h1 text-primary mb-n1">Sweet Feet</span>
             <span class="font2 h3 text-dark align-self-end">by esther</span>
           </div>
         </div>
