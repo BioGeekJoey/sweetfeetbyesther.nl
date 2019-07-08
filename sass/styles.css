@@ -5,22 +5,22 @@ body.bg-img-primary {
   background-attachment: fixed;
 }
 
-body main div.row {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-html {
-  overflow-y: hidden;
+html, body {
+  height: 100vh;
+  min-height: 100%;
+  overflow-y: scroll;
 }
 
 body {
-  min-height: 100vh;
   font-family: "Open sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  overflow-y: scroll;
 }
 
 body.bg-img-primary {
   background-image: url("img/backgroundvector.svg");
+}
+
+body main div.row {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .font1, .font1-shadow {
@@ -35,15 +35,14 @@ body.bg-img-primary {
   font-family: "The Girl Next Door", cursive;
 }
 
+.brand, .brand-container {
+  font-size: inherit;
+}
+
 .brand-container {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: inherit;
-}
-
-.brand {
-  font-size: inherit;
 }
 
 .brand-small {

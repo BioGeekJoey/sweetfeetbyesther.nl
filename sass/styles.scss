@@ -12,7 +12,8 @@ $header-family: "Merriweather",
 serif;
 $brand-family: "The Girl Next Door",
 cursive;
-$bg-img-src: "img/backgroundvector.svg";
+$primary-img: "img/backgroundvector.svg";
+
 
 %body-img {
     background-position: bottom 6vh right 3vw;
@@ -21,30 +22,26 @@ $bg-img-src: "img/backgroundvector.svg";
     background-attachment: fixed;
 }
 
-%div-row {
-    background-color: $body-bg;
-}
-
 html {
-    overflow-y: hidden;
+    height: 100vh;
+    min-height: 100%;
+    overflow-y: scroll;
 }
 
 body {
-    min-height: 100vh;
+    @extend html;
     font-family: $font-family-sans-serif;
-    overflow-y: scroll;
 
     &.bg-img {
 
-
         &-primary {
             @extend %body-img;
-            @include bg-img-src($bg-img-src);
+            @include bg-img-src($primary-img);
         }
     }
 
     main div.row {
-        @extend %div-row;
+        background-color: $body-bg;
     }
 
 }
@@ -62,17 +59,17 @@ body {
     font-family: $brand-family;
 }
 
-.brand-container {
-    width: fit-content;
-    font-size: inherit;
-}
-
 .brand {
     font-size: inherit;
-}
 
-.brand-small {
-    font-size: 1em;
+    &-container {
+        @extend .brand;
+        width: fit-content;
+    }
+
+    &-small {
+        font-size: 1em;
+    }
 }
 
 footer div.container {
