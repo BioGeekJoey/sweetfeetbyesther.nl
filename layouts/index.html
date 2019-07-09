@@ -9,7 +9,8 @@
     {{ $style := resources.Get "styles.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap.min.css" />
+    {{ $bootstrap := resources.Get "bootstrap.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $bootstrap.Permalink }}">
     <!--fonts
         font-family: 'Open Sans', sans-serif;
         font-family: 'Merriweather', serif;

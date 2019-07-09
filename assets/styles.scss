@@ -1,5 +1,5 @@
 @import "variables";
-@import "hover";
+
 
 @mixin shadow-font($darken, $clr) {
     text-shadow: -1px 0 1px darken($color: $clr, $amount: $darken), 1px 0 1px darken($color: $clr, $amount: $darken), 0 -1px 1px darken($color: $clr, $amount: $darken), 0 1px 1px darken($color: $clr, $amount: $darken);
@@ -52,10 +52,6 @@ body {
     text-align: center;
     background-color: $dark;
     outline: 0;
-
-    @include hover {
-        color: $white;
-    }
 }
 
 .skippy-text {
