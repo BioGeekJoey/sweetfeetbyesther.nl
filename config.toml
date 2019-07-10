@@ -2,7 +2,7 @@ baseURL = ["http://sweetfeetbyesther.nl/"]
 
 [Params]
     Title = ["Sweet Feet by Esther | "]
-    author = ["Joël van der Loo"]
+    author = ["Joel van der Loo"]
     GitHubUser = ["BioGeekJoey"]
     LanguageCode = ["nl-NL"]
     LanguageName = ["nl"]
