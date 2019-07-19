@@ -1,9 +1,16 @@
 baseURL = ["http://sweetfeetbyesther.nl/"]
 
-[Params]
-    Title = ["Sweet Feet by Esther | "]
-    author = ["Joel van der Loo"]
-    GitHubUser = ["BioGeekJoey"]
-    LanguageCode = ["nl-NL"]
-    LanguageName = ["nl"]
-    DefaultContentLanguage = ["nl"]
+languageCode = ["nl-NL"]
+languageName = ["nl"]
+sefaultContentLanguage = ["nl"]
+
+title = ["Sweet Feet by Esther | "]
+
+enableGitInfo = true
+
+[frontmatter]
+date  = [":filename", ":default"]
+
+[params]
+  author = ["Joel van der Loo"]
+  GitHubUser = ["BioGeekJoey"]

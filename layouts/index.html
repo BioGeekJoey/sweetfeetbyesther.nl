@@ -1,166 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl-NL">
 
 <head>
 
-    {{ partial "header.html" . }}
+  {{ partial "header.html" . }}
 
-    <!-- Stylesheet -->
-    {{ $style := resources.Get "styles.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
-    <!-- Bootstrap CSS -->
-    {{ $bootstrap := resources.Get "bootstrap.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $bootstrap.Permalink }}">
-    <!--fonts
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Merriweather', serif;
-        font-family: 'The Girl Next Door', cursive;-->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Open+Sans|Merriweather|The+Girl+Next+Door&display=swap" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door&text=by%20Esther&display=swap" />
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/5026593256.js"></script>
+  <!-- Stylesheet -->
+  {{/*  {{ $style := resources.Get "styles.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}"> */}}
+  <!-- Bootstrap CSS -->
+  <script src="https://kit.fontawesome.com/5026593256.js"></script>
+  {{ $bootstrap := resources.Get "bootstrap-sweetfeet.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $bootstrap.Permalink }}">
+  <!-- font awesome -->
 </head>
 
-<body class="flex-column bg-img-primary">
+<body class="d-flex flex-column bg-img-primary">
 
-    {{ partial "skippy.html" . }}
+  {{ partial "skippy.html" . }}
 
-    <header
-        class="navbar navbar-expand navbar-light bg-white bd-navbar flex-column flex-md-row bd-navbar justify-content-md-around">
-        <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Sweet Feet logo">
-            <div class="brand-container d-flex flex-column">
-                <span class="brand brand-small font1-shadow font-weight-bolder text-primary h-shadow">Sweet Feet</span>
-                <span class="brand brand-small font2 text-dark align-self-end mt-n2">by esther</span>
-            </div>
-        </a>
-        <div class="navbar-nav-scroll" id="navbar">
-            <div class="navbar-nav flex-row">
-                <a style="font-size: 0.9rem;" class="nav-link active" href="#">Home</a>
-                <a style="font-size: 0.9rem;" class="nav-link" href="#">Behandeling</a>
-                <a style="font-size: 0.9rem;" class="nav-link" href="#">Over Esther</a>
-                <a style="font-size: 0.9rem;" class="nav-link" href="#">Afspraak</a>
-            </div>
+  <header
+    class="navbar navbar-expand navbar-light bg-white bd-navbar flex-column flex-md-row bd-navbar justify-content-md-around">
+    <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Sweet Feet logo">
+
+      {{ partial "branding.html" . }}
+
+    </a>
+    <div class="navbar-nav-scroll" id="navbar">
+      <div class="navbar-nav flex-row">
+        <a style="font-size: 0.9rem;" class="nav-link active" href="#">Home</a>
+        <a style="font-size: 0.9rem;" class="nav-link" href="#">Behandeling</a>
+        <a style="font-size: 0.9rem;" class="nav-link" href="#">Over Esther</a>
+        <a style="font-size: 0.9rem;" class="nav-link" href="#">Afspraak</a>
+      </div>
+    </div>
+  </header>
+  <main id="content" class="flex-shrink-0">
+    <div class="container">
+      <div style="top: 2vh;" class="alert alert-primary alert-dismissible sticky-top fade show mx-2" role="alert">
+        <span style="color:#FF69B4;" class="h3 text.center d-flex">info</span>
+        De website wordt momenteel ontwikkeld. Schrijf je in voor de
+        <a href="#" class="alert-link">nieuwsbrief</a> en blijf op
+        de hoogte van het laaste nieuws.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <nav aria-label="breadcrumb" class="d-none d-md-flex">
+        <ol class="breadcrumb bg-white">
+          <li class="breadcrumb-item text-primary active" aria-current="page">
+            Home
+          </li>
+        </ol>
+      </nav>
+      <div class="row bg-row py-2">
+        <div class="col d-flex banner">
+          <img src="img/banner.jpg" class="img-fluid d-flex rounded" alt="" />
+          <div class="banner-oneliner d-none d-lg-flex">
+            <span class="font1-shadow h1 text-primary text-nowrap my-2">You feet deserve some love</span>
+          </div>
+
+          {{ partial "branding.html" . }}
+
+          <div class="banner-brand-lg d-none d-lg-flex brand-container flex-column py-1">
+            <span class="font1-shadow h1 text-primary mb-n1">Sweet Feet</span>
+            <span class="font2 h3 text-dark align-self-end">by esther</span>
+          </div>
         </div>
-    </header>
-    <main id="content" class="flex-shrink-0">
-        <div class="container">
-            <div style="top: 2vh;" class="alert alert-primary alert-dismissible sticky-top fade show mx-2" role="alert">
-                <span style="color:#FF69B4;" class="h3 text.center d-flex">info</span>
-                De website wordt momenteel ontwikkeld. Schrijf je in voor de
-                <a href="#" class="alert-link">nieuwsbrief</a> en blijf op
-                de hoogte van het laaste nieuws.
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <nav aria-label="breadcrumb" class="d-none d-md-flex">
-                <ol class="breadcrumb bg-white">
-                    <li class="breadcrumb-item text-primary active" aria-current="page">
-                        Home
-                    </li>
-                </ol>
-            </nav>
-            <div class="row bg-row py-2">
-                <div class="col d-flex banner">
-                    <img src="img/banner.jpg" class="img-fluid d-flex rounded" alt="" />
-                    <div class="banner-oneliner d-none d-lg-flex">
-                        <span class="font1-shadow h1 text-primary text-nowrap my-2">You feet deserve some love</span>
-                    </div>
-                    <div class="banner-brand d-lg-none brand-container d-flex flex-column py-1">
-                        <span class="font1-shadow h1 text-primary mb-n1">Sweet Feet</span>
-                        <span class="font2 h3 text-dark align-self-end">by esther</span>
-                    </div>
-                    <div class="banner-brand-lg d-none d-lg-flex brand-container flex-column py-1">
-                        <span class="font1-shadow h1 text-primary mb-n1">Sweet Feet</span>
-                        <span class="font2 h3 text-dark align-self-end">by esther</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row bg-row pt-3">
-                <div class="col-md-8">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Pellentesque ac tristique ante. Nulla interdum
-                        sodales velit eget iaculis. Nullam quis est et velit
-                        condimentum venenatis. Sed accumsan nulla cursus
-                        dolor vestibulum euismod. Donec nec erat urna.
-                        Aenean et lorem faucibus nibh aliquet dignissim. In
-                        varius sodales mauris, et fermentum leo elementum
-                        sollicitudin. Suspendisse sit amet velit et magna
-                        maximus molestie id a nisl. Nullam et ornare dolor.
-                        Aenean sit amet ex quis mi volutpat pellentesque.
-                    </p>
-                    <p>
-                        Curabitur congue felis nunc, nec vehicula lorem
-                        posuere varius. Quisque ac rhoncus diam. Proin
-                        pretium massa nisl. Quisque fermentum pellentesque
-                        pretium. Donec ultricies enim quam, id pellentesque
-                        elit dapibus vitae. In cursus nulla vitae nunc
-                        tristique ornare. Ut a turpis ante.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-primary mb-3">
-                        <div class="card-body text-primary">
-                            <h4 class="card-title mb-3">Afspraak maken</h4>
-                            <p class="card-text mb-3">
-                                Online een afspraak maken is binnenkort
-                                beschikbaar
-                            </p>
-                            <a href="#" class="btn btn-primary btn-block">Maak een afspraak!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="row bg-row pt-3">
+        <div class="col-md-8">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Pellentesque ac tristique ante. Nulla interdum
+            sodales velit eget iaculis. Nullam quis est et velit
+            condimentum venenatis. Sed accumsan nulla cursus
+            dolor vestibulum euismod. Donec nec erat urna.
+            Aenean et lorem faucibus nibh aliquet dignissim. In
+            varius sodales mauris, et fermentum leo elementum
+            sollicitudin. Suspendisse sit amet velit et magna
+            maximus molestie id a nisl. Nullam et ornare dolor.
+            Aenean sit amet ex quis mi volutpat pellentesque.
+          </p>
+          <p>
+            Curabitur congue felis nunc, nec vehicula lorem
+            posuere varius. Quisque ac rhoncus diam. Proin
+            pretium massa nisl. Quisque fermentum pellentesque
+            pretium. Donec ultricies enim quam, id pellentesque
+            elit dapibus vitae. In cursus nulla vitae nunc
+            tristique ornare. Ut a turpis ante.
+          </p>
         </div>
-    </main>
-
-    <footer class="footer bg-dark rounded-top mt-auto py-3">
-        <div class="container mx-auto">
-            <div class="row justify-content-between">
-                <div class="col-md-4">
-                    <span class="text-white">Hier komt informatie.</span>
-                </div>
-                <div class="col-md-4 d-flex flex-column">
-                    <span class="text-muted">Hier komt algemene voorwaarde.</span>
-                    <span class="text-muted">Hier komt privacy verklaring.</span>
-                </div>
+        <div class="col-md-4">
+          <div class="card border-primary mb-3">
+            <div class="card-body text-primary">
+              <h4 class="card-title mb-3">Afspraak maken</h4>
+              <p class="card-text mb-3">
+                Online een afspraak maken is binnenkort
+                beschikbaar
+              </p>
+              <a href="#" class="btn btn-primary btn-block">Maak een afspraak!</a>
             </div>
-            <div class="row d-flex">
-                <div class="col d-inline-flex flex-md-row justify-content-between pt-md-3">
-                    <a style="font-size: 0.8rem;" class="mx-auto" aria-label="Github"
-                        href="https://github.com/BioGeekJoey/sweetfeetbyesther.nl">
-                        <span class="link-light">
-                            <i class="fab fa-github fa-lg"></i>
-                        </span>
-                        <span class="text-white font-weight-lighter">
-                            Deze website is 100% open source</span>
-                    </a>
-                    <a style="font-size: 0.8rem;" class="mx-auto" aria-label="Copyright"
-                        href="https://github.com/BioGeekJoey/">
-                        <span class="link-light">
-                            <i class="far fa-copyright fa-lg"></i>
-                        </span>
-                        <span class="text-white font-weight-lighter">
-                            Joël van der Loo</span>
-                    </a>
-                </div>
-            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </main>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  <footer class="footer bg-dark rounded-top mt-auto py-3">
+    <div class="container mx-auto">
+      <div class="row justify-content-between">
+        <div class="col-md-4">
+          <span class="text-white">Hier komt informatie.</span>
+        </div>
+        <div class="col-md-4 d-flex flex-column">
+          <span class="text-muted">Hier komt algemene voorwaarde.</span>
+          <span class="text-muted">Hier komt privacy verklaring.</span>
+        </div>
+      </div>
+      <div class="row d-flex">
+        <div class="col d-inline-flex flex-md-row justify-content-between pt-md-3">
+          <a style="font-size: 0.8rem;" class="mx-auto" aria-label="Github"
+            href="https://github.com/BioGeekJoey/sweetfeetbyesther.nl">
+            <span class="link-light">
+              <i class="fab fa-github fa-lg"></i>
+            </span>
+            <span class="text-white font-weight-lighter">
+              Deze website is 100% open source</span>
+          </a>
+          <a style="font-size: 0.8rem;" class="mx-auto" aria-label="Copyright" href="https://github.com/BioGeekJoey/">
+            <span class="link-light">
+              <i class="far fa-copyright fa-lg"></i>
+            </span>
+            <span class="text-white font-weight-lighter">
+              Joël van der Loo</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 </body>
 
