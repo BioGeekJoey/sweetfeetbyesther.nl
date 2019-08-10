@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="{{ $style.Permalink }}"> */}}
   <!-- Bootstrap CSS -->
   <script src="https://kit.fontawesome.com/5026593256.js"></script>
-  {{ $bootstrap := resources.Get "bootstrap-sweetfeet.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  {{ $options := (dict "outputstyle" "compressed" "enableSourceMap" true)}}
+  {{ $bootstrap := resources.Get "bootstrap-sweetfeet.scss" | resources.ToCSS | resources.Fingerprint }}
+
   <link rel="stylesheet" href="{{ $bootstrap.Permalink }}">
   <!-- font awesome -->
 </head>
@@ -39,9 +41,11 @@
     <div class="container">
       <div style="top: 2vh;" class="alert alert-primary alert-dismissible sticky-top fade show mx-2" role="alert">
         <span style="color:#FF69B4;" class="h3 text.center d-flex">info</span>
-        De website wordt momenteel ontwikkeld. Schrijf je in voor de
+        De website wordt momenteel ontwikkeld.
+        <!-- Schrijf je in voor de
         <a href="#" class="alert-link">nieuwsbrief</a> en blijf op
-        de hoogte van het laaste nieuws.
+        de hoogte van het laaste nieuws. -->
+        Excuus voor het ongemak!<br><br> Sweet Feet webteam
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -59,12 +63,15 @@
           <div class="banner-oneliner d-none d-lg-flex">
             <span class="font1-shadow h1 text-primary text-nowrap my-2">You feet deserve some love</span>
           </div>
+          <div class="banner-brand-lg d-none d-lg-flex flex-column py-1">
 
-          {{ partial "branding.html" . }}
+            {{ partial "branding.html" . }}
 
-          <div class="banner-brand-lg d-none d-lg-flex brand-container flex-column py-1">
-            <span class="font1-shadow h1 text-primary mb-n1">Sweet Feet</span>
-            <span class="font2 h3 text-dark align-self-end">by esther</span>
+          </div>
+          <div class="banner-brand d-lg-none flex-column py-1">
+
+            {{partial "branding.html" . }}
+
           </div>
         </div>
       </div>
@@ -122,14 +129,14 @@
         <div class="col d-inline-flex flex-md-row justify-content-between pt-md-3">
           <a style="font-size: 0.8rem;" class="mx-auto" aria-label="Github"
             href="https://github.com/BioGeekJoey/sweetfeetbyesther.nl">
-            <span class="link-light">
+            <span class="text-primary">
               <i class="fab fa-github fa-lg"></i>
             </span>
             <span class="text-white font-weight-lighter">
               Deze website is 100% open source</span>
           </a>
           <a style="font-size: 0.8rem;" class="mx-auto" aria-label="Copyright" href="https://github.com/BioGeekJoey/">
-            <span class="link-light">
+            <span class="text-primary">
               <i class="far fa-copyright fa-lg"></i>
             </span>
             <span class="text-white font-weight-lighter">
