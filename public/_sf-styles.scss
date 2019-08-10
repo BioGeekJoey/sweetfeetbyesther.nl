@@ -1,0 +1,171 @@
+@mixin shadow-font($darken, $clr) {
+  text-shadow: -1px 0 1px darken($color: $clr, $amount: $darken), 1px 0 1px darken($color: $clr, $amount: $darken), 0 -1px 1px darken($color: $clr, $amount: $darken), 0 1px 1px darken($color: $clr, $amount: $darken);
+}
+
+@mixin bg-img-src($url) {
+  background-image: url($url);
+}
+
+.skippy {
+  display: block;
+  padding: 1em;
+  color: $dark;
+  text-align: center;
+  background-color: $white;
+  outline: 0;
+}
+
+.skippy-text {
+  padding: .5em;
+  outline: 1px dotted;
+}
+
+$header-family: "Merriweather",
+serif;
+$brand-family: "The Girl Next Door",
+cursive;
+$primary-img: "img/backgroundvector.svg";
+
+html {
+  height: 100vh;
+  overflow-y: unset;
+}
+
+%body-img {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom 6vh right 3vw;
+  background-size: 60vmin;
+}
+
+body {
+  @extend html;
+
+  &.bg-img {
+
+    &-primary {
+      @extend %body-img;
+      @include bg-img-src($primary-img);
+    }
+  }
+
+  main div.row {
+    background-color: $body-bg;
+  }
+}
+
+.font1 {
+  font-family: $header-family;
+
+  &-shadow {
+    @extend .font1;
+    @include shadow-font(50%, $primary);
+  }
+}
+
+.font2 {
+  font-family: $brand-family;
+}
+
+.brand {
+  $brandfontsize: 4rem;
+  width: fit-content;
+
+  &:first-child {
+    @extend .brand;
+    @include shadow-font(50%, $primary);
+    @include font-size(1 * $brandfontsize);
+    font-family: "Merriweather";
+  }
+
+  :first-child & {
+    @extend .brand;
+    @include font-size (.625 * #{$brandfontsize});
+  }
+}
+
+.bd-footer {
+  @include font-size(.875rem);
+  text-align: center;
+  background-color: #f7f7f7;
+
+  a {
+    font-weight: 600;
+    color: $gray-700;
+
+    &:hover,
+    &:focus {
+      color: $link-color;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(sm) {
+    text-align: left;
+  }
+}
+
+.bd-footer-links {
+  padding-left: 0;
+  margin-bottom: 1rem;
+
+  li {
+    display: inline-block;
+
+    +li {
+      margin-left: 1rem;
+    }
+  }
+}
+
+footer div.container {
+  width: auto;
+  max-width: 1100px;
+  padding: 0 15px;
+}
+
+.banner {
+  max-height: 130px;
+  overflow: hidden;
+
+  img {
+    min-width: 100%;
+    min-height: 250px;
+    max-height: 300px;
+    filter: blur(.8px) contrast(115%) grayscale(50%);
+    opacity: .7;
+    object-fit: cover;
+  }
+
+  %pos {
+    position: absolute;
+    top: 50%;
+  }
+
+  %trans {
+    transform: translateY(-50%);
+
+  }
+
+  &-oneliner {
+    @extend %pos;
+    left: 32px;
+    @extend %trans;
+  }
+
+  &-brand {
+    @extend %pos;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-brand-lg {
+    @extend %pos;
+    right: 32px;
+    @extend %trans;
+  }
+
+}
