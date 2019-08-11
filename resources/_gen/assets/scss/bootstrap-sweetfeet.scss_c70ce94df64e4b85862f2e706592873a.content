@@ -6851,7 +6851,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 400;
   font-display: swap;
   src: local("Crafty Girls Regular"), local("CraftyGirls-Regular"), url("https://fonts.gstatic.com/s/craftygirls/v8/va9B4kXI39VaDdlPJo8N_NveRhf6.woff2") format("woff2");
-  unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd; }
+  unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd; }
 
 @font-face {
   font-family: "Merriweather";
@@ -6859,7 +6859,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 400;
   font-display: swap;
   src: local("Merriweather Regular"), local("Merriweather-Regular"), url("https://fonts.gstatic.com/s/merriweather/v20/u-440qyriQwlOrhSvowK_l5-ciZMZ-Y.woff2") format("woff2");
-  unicode-range: u+0100-024f, u+0259, u+1e00-1eff, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff; }
+  unicode-range: u+0100-024f, u+0259, u+1e00-1eff, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff; }
 
 @font-face {
   font-family: "The Girl Next Door";
@@ -6867,7 +6867,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 400;
   font-display: swap;
   src: local("The Girl Next Door"), local("TheGirlNextDoor"), url("https://fonts.gstatic.com/s/thegirlnextdoor/v9/pe0zMJCIMIsBjFxqYBIcZ6_OI5oFHCY4ULF6.woff2") format("woff2");
-  unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd; }
+  unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd; }
 
 .gf-crafty-girls {
   font-family: "Crafty Girls"; }
