@@ -1,0 +1,19 @@
+<header
+  class="navbar navbar-expand navbar-light bg-white bd-navbar flex-column flex-md-row bd-navbar justify-content-md-around">
+  <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Sweet Feet logo">
+
+    {{ partial "branding.html" . }}
+
+  </a>
+  <div class="navbar-nav-scroll" id="navbar">
+    <div class="navbar-nav flex-row">
+      <a style="font-size: .9rem;" class="nav-link{{ if ( eq .Title "Home" ) }} active{{end}}" href="/">Home</a>
+      <a style="font-size: .9rem;" class="nav-link{{ if ( eq .Title "Behandeling" ) }} active{{end}}"
+        href="/behandeling">Behandeling</a>
+      <a style="font-size: .9rem;" class="nav-link{{ if ( eq .Title "Over Esther" ) }} active{{end}}"
+        href="/over_esther">Over Esther</a>
+      <a style="font-size: .9rem;" class="nav-link{{ if ( eq .Title "Afspraak" ) }} active{{end}}"
+        href="/afspraak">Afspraak</a>
+    </div>
+  </div>
+</header>

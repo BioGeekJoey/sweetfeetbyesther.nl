@@ -6907,25 +6907,26 @@ body main div.row {
   background-color: rgba(255, 255, 255, 0.6); }
 
 .font1, .font1-shadow, .brand span:first-child {
-  font-family: "Merriweather", serif; }
+  font-family: "ff-cocon-pro", serif; }
   .font1-shadow {
     text-shadow: -1px 0 1px black, 1px 0 1px black, 0 -1px 1px black, 0 1px 1px black; }
 
 .font2, .brand span {
-  font-family: "The Girl Next Door", cursive; }
+  font-family: "grafolita-script", cursive; }
 
 .brand, .brand span:first-child, .brand span {
+  white-space: nowrap;
+  line-height: 85%;
   width: fit-content; }
   .brand span:first-child {
     text-shadow: -1px 0 1px black, 1px 0 1px black, 0 -1px 1px black, 0 1px 1px black;
-    font-size: 3.6rem; }
+    font-size: 3rem; }
     .navbar-brand .brand span:first-child, .brand .navbar-brand span span:first-child {
-      font-size: 2.07rem; }
+      font-size: 1.725rem; }
   .brand span, .brand span:first-child span, .brand span span {
-    font-size: 2.25rem; }
+    font-size: 2.16rem; }
     .navbar-brand .brand span, .brand .navbar-brand span span {
-      font-size: 1.26rem;
-      padding-top: 1rem; }
+      font-size: 1.275rem; }
 
 .bd-footer {
   font-size: 0.875rem;

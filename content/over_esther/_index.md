@@ -1,21 +1,14 @@
 ---
-title: Sweet Feet by esther | Over Esther
-date: 2019-08-11
-publishdate: 2019-08-11
-draft: false
+title: Over Esther
+
+alert: true
+alerttitle: Oeps!
+alertinfo:  Deze pagina is nog niet klaar! Komt later terug. 
+alertdismiss: false
 ---
 
-<div class="brand d-flex flex-column">
-  <span class="text-primary pt-0 mb-n4" style="font-family:aisha-latin; font-size:5.35rem;">Sweet Feet</span>
-  <span class="align-self-end pb-0 mt-n4" style="font-family:grafolita-script; font-size:2.75rem;">by esther</span>
-</div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac tristique ante. Nulla interdum sodales velit eget iaculis. Nullam quis est et velit condimentum venenatis. Sed accumsan nulla cursus dolor vestibulum euismod. Donec nec erat urna. Aenean et lorem faucibus nibh aliquet dignissim. In varius sodales mauris, et fermentum leo elementum sollicitudin. Suspendisse sit amet velit et magna maximus molestie id a nisl. Nullam et ornare dolor. Aenean sit amet ex quis mi volutpat pellentesque.
 
-<div class="brand d-flex flex-column">
-  <span class="text-primary pt-0 mb-n4" style="font-family:mr-eaves-sans; font-size:4.25rem;">Sweet Feet</span>
-  <span class="align-self-end pb-0 mt-n4" style="font-family:grafolita-script; font-size:2.75rem;">by esther</span>
-</div>
+Curabitur congue felis nunc, nec vehicula lorem posuere varius. Quisque ac rhoncus diam. Proin pretium massa nisl. Quisque fermentum pellentesque pretium. Donec ultricies enim quam, id pellentesque elit dapibus vitae. In cursus nulla vitae nunc tristique ornare. Ut a turpis ante.
 
-<div class="brand d-flex flex-column">
-  <span class="text-primary pt-0 mb-n2" style="font-family:ff-cocon-pro; font-size:3.2rem;">Sweet Feet</span>
-  <span class="align-self-end pb-0 mt-n4" style="font-family:grafolita-script; font-size:2.75rem;">by esther</span>
-</div>
+Vestibulum euismod. Donec nec erat urna. Aenean et lorem faucibus nibh aliquet dignissim. In varius sodales mauris, et fermentum leo elementum sollicitudin. Suspendisse sit amet velit et magna maximus.
