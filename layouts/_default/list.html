@@ -9,30 +9,28 @@
 
 <body>
 
-  <header
-    class="navbar navbar-expand navbar-light bg-white bd-navbar flex-column flex-md-row bd-navbar justify-content-md-around">
-    <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Sweet Feet logo">
+  {{ partial "skippy.html" . }}
 
-      {{ partial "branding.html" . }}
-
-    </a>
-    <div class="navbar-nav-scroll" id="navbar">
-      <div class="navbar-nav flex-row">
-        <a style="font-size: .9rem;" class="nav-link" href="/">Home</a>
-        <a style="font-size: .9rem;" class="nav-link" href="#">Behandeling</a>
-        <a style="font-size: .9rem;" class="nav-link" href="/over_esther">Over Esther</a>
-        <a style="font-size: .9rem;" class="nav-link" href="#">Afspraak</a>
-      </div>
-    </div>
-  </header>
+  {{ partial "header.html" . }}
 
   <main id="content" class="flex-shrink-0">
     <div class="container">
+
+      <nav aria-label="breadcrumb" class="d-none d-md-flex">
+        <ol class="breadcrumb bg-white">
+          <li class="breadcrumb-item"><a class="text-primary" href="/">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+        </ol>
+      </nav>
+
+      {{ partial "alert.html" . }}
 
       {{ .Content }}
 
     </div>
   </main>
+
+  {{ partial "footer.html" . }}
 
   {{ partial "scripts.html" . }}
 

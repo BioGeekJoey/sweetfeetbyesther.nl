@@ -20,9 +20,9 @@
   outline: 1px dotted;
 }
 
-$header-family: "Merriweather",
+$header-family: "ff-cocon-pro",
 serif;
-$brand-family: "The Girl Next Door",
+$brand-family: "grafolita-script",
 cursive;
 $primary-img: "img/backgroundvector.svg";
 
@@ -68,7 +68,9 @@ body {
 }
 
 .brand {
-  $brandfontsize: 3.6rem;
+  $brandfontsize: 3rem;
+  white-space: nowrap;
+  line-height: 85%;
   width: fit-content;
 
   & span:first-child {
@@ -85,12 +87,11 @@ body {
 
   & span {
     @extend .brand;
-    @include font-size(0.625 * $brandfontsize);
+    @include font-size(.72 * $brandfontsize);
     @extend .font2;
 
     .navbar-brand & {
-      @include font-size(.35 * $brandfontsize);
-      padding-top: 1rem;
+      @include font-size(.425 * $brandfontsize);
     }
 
   }

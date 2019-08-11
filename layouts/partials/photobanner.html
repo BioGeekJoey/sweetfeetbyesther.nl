@@ -1,0 +1,19 @@
+<div class="row bg-row py-2">
+  <div class="col d-flex banner">
+    <img src="img/banner.jpg" class="img-fluid d-flex rounded" alt="" />
+    <div class="banner-oneliner d-none d-lg-flex">
+      <span class="font1-shadow h1 text-primary text-nowrap my-2">{{ $.Params.oneliner }}</span>
+    </div>
+    <div class="banner-brand d-lg-none flex-column py-1">
+
+      {{partial "branding.html" . }}
+
+    </div>
+    <div class="banner-brand-lg d-none d-lg-flex flex-column py-1">
+
+      {{ partial "branding.html" . }}
+
+    </div>
+
+  </div>
+</div>

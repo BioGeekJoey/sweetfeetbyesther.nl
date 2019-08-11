@@ -1,16 +1,13 @@
-baseURL = ["http://sweetfeetbyesther.nl/"]
+baseURL = "https://sweetfeetbyesther.nl/"
 
-languageCode = ["nl-NL"]
-languageName = ["nl"]
-sefaultContentLanguage = ["nl"]
+languageCode = "nl-NL"
+languageName = "nl"
+sefaultContentLanguage = "nl"
 
-title = ["Sweet Feet by Esther | "]
+title = "Sweet Feet by Esther | "
 
 enableGitInfo = true
 
-[frontmatter]
-date  = [":filename", ":default"]
-
 [params]
-  author = ["Joel van der Loo"]
-  GitHubUser = ["BioGeekJoey"]
+  Author = "Joël van der Loo"
+  GitHubUser = "BioGeekJoey"

@@ -11,61 +11,21 @@
 
   {{ partial "skippy.html" . }}
 
-  <header
-    class="navbar navbar-expand navbar-light bg-white bd-navbar flex-column flex-md-row bd-navbar justify-content-md-around">
-    <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Sweet Feet logo">
-
-      {{ partial "branding.html" . }}
-
-    </a>
-    <div class="navbar-nav-scroll" id="navbar">
-      <div class="navbar-nav flex-row">
-        <a style="font-size: .9rem;" class="nav-link active" href="/">Home</a>
-        <a style="font-size: .9rem;" class="nav-link" href="#">Behandeling</a>
-        <a style="font-size: .9rem;" class="nav-link" href="/over_esther">Over Esther</a>
-        <a style="font-size: .9rem;" class="nav-link" href="#">Afspraak</a>
-      </div>
-    </div>
-  </header>
+  {{ partial "header.html" . }}
 
   <main id="content" class="flex-shrink-0">
     <div class="container">
-      <div style="top: 2vh;" class="alert alert-primary alert-dismissible sticky-top fade show mx-2" role="alert">
-        <span style="color: #ff69b4;" class="h3 text.center d-flex">info</span>
-        De website wordt momenteel ontwikkeld.
-        <!-- Schrijf je in voor de
-        <a href="#" class="alert-link">nieuwsbrief</a> en blijf op
-        de hoogte van het laaste nieuws. -->
-        Excuus voor het ongemak!<br><br> Sweet Feet webteam
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
+
       <nav aria-label="breadcrumb" class="d-none d-md-flex">
         <ol class="breadcrumb bg-white">
-          <li class="breadcrumb-item text-primary active" aria-current="page">
-            Home
-          </li>
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
         </ol>
       </nav>
-      <div class="row bg-row py-2">
-        <div class="col d-flex banner">
-          <img src="img/banner.jpg" class="img-fluid d-flex rounded" alt="" />
-          <div class="banner-oneliner d-none d-lg-flex">
-            <span class="font1-shadow h1 text-primary text-nowrap my-2">You feet deserve some love</span>
-          </div>
-          <div class="banner-brand-lg d-none d-lg-flex flex-column py-1">
 
-            {{ partial "branding.html" . }}
+      {{ partial "alert.html" . }}
 
-          </div>
-          <div class="banner-brand d-lg-none flex-column py-1">
+      {{ partial "photobanner.html" . }}
 
-            {{partial "branding.html" . }}
-
-          </div>
-        </div>
-      </div>
       <div class="row bg-row pt-3">
         <div class="col-md-8">
 
@@ -91,6 +51,7 @@
   {{ partial "footer.html" . }}
 
   {{ partial "scripts.html" . }}
+  <span class="d-none">home</span>
 </body>
 
 </html>

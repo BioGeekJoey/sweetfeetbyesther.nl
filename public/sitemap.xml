@@ -3,22 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/over_esther/</loc>
-    <lastmod>2019-08-11T14:27:58+02:00</lastmod>
+    <loc>https://sweetfeetbyesther.nl/afspraak/</loc>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2019-08-11T14:27:58+02:00</lastmod>
+    <loc>https://sweetfeetbyesther.nl/behandeling/</loc>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://sweetfeetbyesther.nl/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://sweetfeetbyesther.nl/</loc>
+    <lastmod>2019-08-11T15:05:51+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sweetfeetbyesther.nl/over_esther/</loc>
+    <lastmod>2019-08-11T16:29:06+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sweetfeetbyesther.nl/tags/</loc>
     <priority>0</priority>
   </url>
   

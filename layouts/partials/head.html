@@ -1,21 +1,20 @@
 <!-- basic info -->
-<title>{{ .Title }}</title>
+<title>{{.Site.Title}}{{ .Title }}</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <!-- optimisation info -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="description" content="Ambulant pedicure & pedicure praktijk Sweet Feet" />
-<meta name="author" content=" {{ .Content }}  ">
+<meta name="author" content="{{ .Site.Params.Author }}">
 <meta name="keywords"
   content="pedicure, voet, voeten, provoet, nagel, kalknagel, schimmelnagel, teennagel, ambulent, praktijk, Arnhem, Elden, Schaarsbergen, Elst, Oosterbeek, Velp" />
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#FF69B4">
-<link rel="canonical" href="{{ .Content }} ">
+<link rel="canonical" href="{{ .Site.BaseURL }}">
 
 <!-- Bootstrap CSS -->
-<script src="https://kit.fontawesome.com/5026593256.js"></script>
-{{ $options := (dict "outputstyle" "compressed" "enableSourceMap" true)}}
-{{ $bootstrap := resources.Get "bootstrap-sweetfeet.scss" | resources.ToCSS | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $bootstrap.Permalink }}">
+{{ $bootstrap := resources.Get "bootstrap-sweetfeet.scss" | resources.ToCSS | resources.Minify| resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $bootstrap.Permalink }}" integrity="{{ $bootstrap.Data.Integrity }}">
 
 <!-- font awesome -->
+<script src="https://kit.fontawesome.com/5026593256.js"></script>
