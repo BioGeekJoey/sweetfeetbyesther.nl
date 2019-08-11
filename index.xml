@@ -10,5 +10,14 @@
 	<atom:link href="https://sweetfeetbyesther.nl/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Favicon</title>
+      <link>https://sweetfeetbyesther.nl/over_esther/favico/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sweetfeetbyesther.nl/over_esther/favico/</guid>
+      <description>SF</description>
+    </item>
+    
   </channel>
 </rss>
