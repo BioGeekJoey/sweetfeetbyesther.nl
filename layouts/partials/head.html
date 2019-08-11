@@ -1,5 +1,5 @@
 <!-- basic info -->
-<title>"{{ .Content }}"</title>
+<title>{{ .Title }}</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <!-- optimisation info -->
@@ -11,3 +11,11 @@
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#FF69B4">
 <link rel="canonical" href="{{ .Content }} ">
+
+<!-- Bootstrap CSS -->
+<script src="https://kit.fontawesome.com/5026593256.js"></script>
+{{ $options := (dict "outputstyle" "compressed" "enableSourceMap" true)}}
+{{ $bootstrap := resources.Get "bootstrap-sweetfeet.scss" | resources.ToCSS | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $bootstrap.Permalink }}">
+
+<!-- font awesome -->

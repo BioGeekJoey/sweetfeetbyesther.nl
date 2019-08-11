@@ -3,18 +3,8 @@
 
 <head>
 
-  {{ partial "header.html" . }}
+  {{ partial "head.html" . }}
 
-  <!-- Stylesheet -->
-  {{/*  {{ $style := resources.Get "styles.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}"> */}}
-  <!-- Bootstrap CSS -->
-  <script src="https://kit.fontawesome.com/5026593256.js"></script>
-  {{ $options := (dict "outputstyle" "compressed" "enableSourceMap" true)}}
-  {{ $bootstrap := resources.Get "bootstrap-sweetfeet.scss" | resources.ToCSS | resources.Fingerprint }}
-
-  <link rel="stylesheet" href="{{ $bootstrap.Permalink }}">
-  <!-- font awesome -->
 </head>
 
 <body class="d-flex flex-column bg-img-primary">
@@ -30,13 +20,14 @@
     </a>
     <div class="navbar-nav-scroll" id="navbar">
       <div class="navbar-nav flex-row">
-        <a style="font-size: .9rem;" class="nav-link active" href="#">Home</a>
+        <a style="font-size: .9rem;" class="nav-link active" href="/">Home</a>
         <a style="font-size: .9rem;" class="nav-link" href="#">Behandeling</a>
-        <a style="font-size: .9rem;" class="nav-link" href="#">Over Esther</a>
+        <a style="font-size: .9rem;" class="nav-link" href="/over_esther">Over Esther</a>
         <a style="font-size: .9rem;" class="nav-link" href="#">Afspraak</a>
       </div>
     </div>
   </header>
+
   <main id="content" class="flex-shrink-0">
     <div class="container">
       <div style="top: 2vh;" class="alert alert-primary alert-dismissible sticky-top fade show mx-2" role="alert">
@@ -77,26 +68,9 @@
       </div>
       <div class="row bg-row pt-3">
         <div class="col-md-8">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Pellentesque ac tristique ante. Nulla interdum
-            sodales velit eget iaculis. Nullam quis est et velit
-            condimentum venenatis. Sed accumsan nulla cursus
-            dolor vestibulum euismod. Donec nec erat urna.
-            Aenean et lorem faucibus nibh aliquet dignissim. In
-            varius sodales mauris, et fermentum leo elementum
-            sollicitudin. Suspendisse sit amet velit et magna
-            maximus molestie id a nisl. Nullam et ornare dolor.
-            Aenean sit amet ex quis mi volutpat pellentesque.
-          </p>
-          <p>
-            Curabitur congue felis nunc, nec vehicula lorem
-            posuere varius. Quisque ac rhoncus diam. Proin
-            pretium massa nisl. Quisque fermentum pellentesque
-            pretium. Donec ultricies enim quam, id pellentesque
-            elit dapibus vitae. In cursus nulla vitae nunc
-            tristique ornare. Ut a turpis ante.
-          </p>
+
+          {{.Content}}
+
         </div>
         <div class="col-md-4">
           <div class="card border-primary mb-3">
@@ -114,50 +88,9 @@
     </div>
   </main>
 
-  <footer class="footer bg-dark rounded-top mt-auto py-3">
-    <div class="container mx-auto">
-      <div class="row justify-content-between">
-        <div class="col-md-4">
-          <span class="text-white">Hier komt informatie.</span>
-        </div>
-        <div class="col-md-4 d-flex flex-column">
-          <span class="text-muted">Hier komt algemene voorwaarde.</span>
-          <span class="text-muted">Hier komt privacy verklaring.</span>
-        </div>
-      </div>
-      <div class="row d-flex">
-        <div class="col d-inline-flex flex-md-row justify-content-between pt-md-3">
-          <a style="font-size: .8rem;" class="mx-auto" aria-label="Github"
-            href="https://github.com/BioGeekJoey/sweetfeetbyesther.nl">
-            <span class="text-primary">
-              <i class="fab fa-github fa-lg"></i>
-            </span>
-            <span class="text-white font-weight-lighter">
-              Deze website is 100% open source</span>
-          </a>
-          <a style="font-size: .8rem;" class="mx-auto" aria-label="Copyright" href="https://github.com/BioGeekJoey/">
-            <span class="text-primary">
-              <i class="far fa-copyright fa-lg"></i>
-            </span>
-            <span class="text-white font-weight-lighter">
-              Joël van der Loo</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  {{ partial "footer.html" . }}
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+  {{ partial "scripts.html" . }}
 </body>
 
 </html>
