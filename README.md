@@ -20,4 +20,4 @@ This website is generated using Hugo. A Static Site Generator build in GO. For m
 [Documentation](https://getbootstrap.com/docs/4.3/getting-started/introduction/) |
 [Installation Guide](https://getbootstrap.com/docs/4.3/getting-started/download/) 
 
-This website is build on the Bootstrap 4 CSS en JS framework.
+This website is build on the Bootstrap 4 CSS en JS framework. (mostly because I felt like giving it a try)
